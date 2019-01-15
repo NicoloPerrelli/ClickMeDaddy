@@ -3,7 +3,7 @@ import Cards from "../Cards"
 
 function Container(props) {
   return (
-  <div className={`container${props.fluid ? "-fluid" : ""}`}>
+  <div>
 	<Cards imgArray = {props.imgArray.map}/>
   </div>
   )

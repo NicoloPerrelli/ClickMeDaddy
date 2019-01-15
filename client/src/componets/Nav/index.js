@@ -12,7 +12,7 @@ function Nav(props) {
 			 </li>
 			 
 			 <li>
-				 Score: {props.scores.now} | Top Score: {props.scores.top}
+				 
 			 </li>
 		</ul>
     </nav>
