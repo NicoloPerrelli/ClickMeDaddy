@@ -1,17 +1,49 @@
 var imgArray = {
-	1:{
+	0:{
 		picture:"https://via.placeholder.com/150",
 		isPressed:false
 	},
-	2:{
+	1:{
 		picture:"https://via.placeholder.com/151",
 		isPressed:false
 	},
-	3:{
+	2:{
 		picture:"https://via.placeholder.com/152",
 		isPressed:false
 	},
+	3:{
+		picture:"https://via.placeholder.com/153",
+		isPressed:false
+	},
 	4:{
+		picture:"https://via.placeholder.com/150",
+		isPressed:false
+	},
+	5:{
+		picture:"https://via.placeholder.com/151",
+		isPressed:false
+	},
+	6:{
+		picture:"https://via.placeholder.com/152",
+		isPressed:false
+	},
+	7:{
+		picture:"https://via.placeholder.com/153",
+		isPressed:false
+	},
+	8:{
+		picture:"https://via.placeholder.com/150",
+		isPressed:false
+	},
+	9:{
+		picture:"https://via.placeholder.com/151",
+		isPressed:false
+	},
+	10:{
+		picture:"https://via.placeholder.com/152",
+		isPressed:false
+	},
+	11:{
 		picture:"https://via.placeholder.com/153",
 		isPressed:false
 	}

@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from 'react-native'
 
 function Card(props) {//this is handed a picture and id
   return (

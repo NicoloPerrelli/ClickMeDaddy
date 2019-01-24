@@ -4,8 +4,6 @@ import React, { Component } from 'react';
 //import Footer from "./components/Footer";
 import Container from "./componets/Container"
 import Stack from "./imgArray"
-import ReactDOM from 'react-dom'
-import ReactBootstrap from "react-bootstrap"
 
 class App extends Component {
 	state = {
@@ -18,7 +16,7 @@ class App extends Component {
 		let array=(imgArray.length),
 		temp,
 		hold;
-
+		
 		while (array !== 0) {
 			hold = Math.floor(Math.random() * array);
 			array -= 1;
@@ -26,11 +24,9 @@ class App extends Component {
 			imgArray[array] = imgArray[hold];
 			imgArray[hold] = temp;
 		 }
-	  
+		 
 		 return imgArray;
 	  };
-
-	
 
 	componentDidMount(){
 		this.setState({
@@ -39,12 +35,18 @@ class App extends Component {
 		this.random(this.imgArray)
 	}
 
-	resetCurrent = event => {
-		//playertop stays same
-		//player now score is set to zero
-		//actionFrames are set to not pressed
-		//pictures are randomed
-		//actionFrames are rendered
+	resetCurrent(){
+		this.setState((state) =>{//player now score is set to zero
+			return {now:0}
+		})
+
+		for(let i = 0; i < 12; i++){//actionFrames are set to not pressed
+			this.setState((state) => {
+				state.imgArray.i.isPressed = false;
+			})
+		}
+
+		this.random(this.imgArray)//pictures are randomed
 	}
 
 	win = event => {//run win render
